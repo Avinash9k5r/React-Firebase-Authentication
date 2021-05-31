@@ -1,6 +1,5 @@
 {
   "name": "firebase-authentication",
-  "homepage": "https://github.com/Avinash9k5r/React-Firebase-Authentication",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -9,7 +8,6 @@
     "@testing-library/user-event": "^12.1.10",
     "bootstrap": "^5.0.1",
     "firebase": "^8.6.3",
-    "gh-pages": "^3.2.0",
     "react": "^17.0.2",
     "react-bootstrap": "^1.6.0",
     "react-dom": "^17.0.2",
@@ -19,8 +17,6 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -42,5 +38,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^3.2.0"
   }
 }
