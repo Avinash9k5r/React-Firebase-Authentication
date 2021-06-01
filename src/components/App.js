@@ -7,6 +7,8 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import PrivateRoute from "./PrivateRoute";
 import ForgotPassword from "./ForgotPassword";
 import UpdateProfile from "./UpdateProfile";
+import SignupSuccess from "./SignupSuccess";
+import Home from "./Home";
 function App() {
   return (
     <Container
@@ -17,6 +19,8 @@ function App() {
         <AuthProvider>
           <Router>
             <Switch>
+              <Route path="/signupsuccess" component={SignupSuccess} />
+              <Route path="/home" component={Home} />
               <PrivateRoute exact path="/" component={Dashboard} />
               <PrivateRoute path="/update-profile" component={UpdateProfile} />
               <Route path="/signup" component={Signup} />
